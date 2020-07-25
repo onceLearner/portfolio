@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Fredericka+the+Great&display=swap");
+#personalCard {
+  border-radius: 39px;
+}
+
+@media (min-width: 700px) {
+  #postsCont {
+    margin-left: 15%;
+  }
+}
+#Yetanother {
+  font-family: "Courgette", cursive;
+}
+#issatiText {
+  font-family: "Fredericka the Great", cursive;
+}
