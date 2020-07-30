@@ -1,18 +1,25 @@
 import React, { useState } from "react";
+import Card from "../src/components/card";
+import { FaArrowCircleLeft } from "react-icons/fa";
 import Link from "next/link";
 const Portfolio = () => {
   return (
     <div className=" p-8 ">
-      <div className="p-4 shadow bg-blue-900  rounded-lg">
-        <h2 className="px-5  py-2 text-red-500 text-center text-lg ">
-          this is my porfolio
-        </h2>
-        <Link href="index" className="underline bg-blue">
-          <a className="text-blue-200 shadow border-b hover:text-red-300">
-            {" "}
-            return back
-          </a>
-        </Link>
+      <Link href="index" className="flex ">
+        <a className=" text-blue-700 shadow-2xl  hover:text-red-300">
+          {" "}
+          <FaArrowCircleLeft /> back
+        </a>
+      </Link>
+      <div id="all_cards" className="p-3 flex justify-evenly gap-3">
+        <Card name="reda"></Card>
+        <Card name="reda2"></Card>
+      </div>
+      <div className="">
+        <div className="flex justify-center">
+          <p>A</p>
+          <p>B</p>
+        </div>
       </div>
     </div>
   );

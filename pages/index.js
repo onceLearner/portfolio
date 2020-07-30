@@ -18,49 +18,67 @@ export default function Home() {
         <div id="containerOfPage" className="mx-auto p-4">
           <div id="card">
             <div className="text-center text-2xl font-sans" id="Yetanother">
-              <h1>
-                <h5 id="issatiText">ISSATI </h5>| Yet Another Dev
+              <h1 className="flex justify-center">
+                <h5 id="issatiText" className="mr-3">
+                  ISSATI
+                </h5>
+                | Yet Another Dev
               </h1>
             </div>
-            <div className="w-16 h-10 mx-auto  mt-4 " id="contImage">
-              <img src="/issati.jpg" className="rounded-full"></img>
-            </div>
+
             <div
               id="personalCard"
-              className=" rounded-lg  max-w-screen-lg mx-auto transform scale-75"
+              className="flex  items-center    md:border  rounded-full  max-w-screen-sm  mx-auto "
             >
-              <div className="text-center">
-                <h3 className="text-xl font-thin">MOHAMMED EL ISSATI </h3>
-                <p className="p-2 font-hairline ">
-                  software Engineer student | Web Ethusiast | React lover{" "}
-                  <br></br>shares articles, tutorials and his thoughts on
-                  various things.
-                </p>
+              <div className="pr-2 pl-2" id="contImage">
+                <img src="/issati2.jpg" className="imgReda "></img>
               </div>
-              <div className="text-center p-2">
-                <Link href="portfolio" className="">
-                  <a className="text-blue-600 underline px-4">Portfolio</a>
-                </Link>
-                <Link href="cv">
-                  <a className="text-blue-500 underline">CV</a>
-                </Link>
-              </div>
+              <div id="mainBioAndSocial" className="">
+                <div id="Bio" className="">
+                  <div className="flex justify-center items-center pr-8">
+                    <h3 className="text-xl font-light">MOHAMMED EL ISSATI </h3>
+                  </div>
+                  <p className="p-2 font-hairline  ">
+                    software Engineer student | Web Ethusiast | React lover{" "}
+                    <br></br>shares articles, tutorials and his thoughts on
+                    various things.
+                  </p>
+                </div>
+                <div
+                  id="portfolCv_SocilaContainer"
+                  className="flex justify-center gap-4"
+                >
+                  <div id="Pages" className=" ">
+                    <Link href="portfolio" className="">
+                      <a className="text-blue-600 text-lg hover:underline ">
+                        Portfolio
+                      </a>
+                    </Link>
 
-              <div className="flex items-center m-3 " id="socialCont">
-                <p className=""> Join me !</p>
-                <a href="https://www.linkedin.com/in/mohammed-el-issati-2a62a3123/">
-                  <FaLinkedin
-                    color="#0e76a8"
-                    size={22}
-                    className="mt-1 ml-5 mr-3"
-                  />{" "}
-                </a>
-                <a href="https://twitter.com/redaamir972">
-                  <FaTwitter color="#00acee" size={22} className="mt-1 mr-3" />{" "}
-                </a>
-                <a href="https://github.com/oncelearner">
-                  <FaGithub className="mt-1" size={22} />{" "}
-                </a>
+                    <Link href="cv">
+                      <a className="text-blue-500 ml-3 hover:underline  mr-5 text-lg">
+                        CV
+                      </a>
+                    </Link>
+                  </div>
+
+                  <div id="IconSocialCont" className="flex ">
+                    <a
+                      href="https://www.linkedin.com/in/mohammed-el-issati-2a62a3123/"
+                      target="_blank"
+                    >
+                      <FaLinkedin color="#0e76a8" className="mr-4" size={22} />
+                    </a>
+                    <div className="amine3">
+                      <a href="https://twitter.com/redaamir972" target="_blank">
+                        <FaTwitter color="#00acee" size={22} className="mr-4" />{" "}
+                      </a>
+                    </div>
+                    <a href="https://github.com/oncelearner" target="_blank">
+                      <FaGithub size={22} />{" "}
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

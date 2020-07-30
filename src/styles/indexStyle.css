@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Fredericka+the+Great&display=swap");
 #personalCard {
-  border-radius: 39px;
+  /* border-radius: 39px; */
 }
 
 @media (min-width: 700px) {
@@ -13,4 +13,36 @@
 }
 #issatiText {
   font-family: "Fredericka the Great", cursive;
+}
+.amine {
+  border: 2px solid rgb(47, 171, 243);
+  height: 37px;
+  width: 37px;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+.amine:hover {
+  background-color: rgb(60, 74, 104);
+  box-shadow: 4px 4px 3px 5px rgb(233, 233, 233);
+}
+/* #contImage {
+  border: 2px rgb(43, 35, 35) solid;
+  object-fit: contain;
+}
+*/
+
+.imgReda {
+  object-fit: contain;
+  height: 10%;
+  width: 15vh;
+  border-radius: 10vh;
+  margin-right: 30px;
+  filter: brightness(1.5);
+  border: 2px rgb(153, 148, 148) solid;
+}
+#personalCard {
+  transform: scale(0.81);
+  /* border-radius: 80px; */
+  box-sizing: content-box;
 }

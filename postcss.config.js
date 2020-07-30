@@ -16,6 +16,6 @@ module.exports = {
     //       },
     //     ]
     //   : undefined,
-    "autoprefixer",
+    "autoprefixer", // for all browser type moz webkit ..
   ],
 };
