@@ -54,11 +54,64 @@ const CV = () => {
             </a>
           </div>
         </div>
+        <div className="my  flex flex-wrap justify-evenly">
+          <div className="my__skills">
+            <h3 className="my__skills__title text-2xl">Skills</h3>
+            <div className="my__skills__content ">
+              <div className="flex p-1 ">
+                <h4 className="font-bold mr-3">languages:</h4>
+                <p>Python, C, java </p>
+              </div>
+              <div className="flex p-1 ">
+                <h4 className="font-bold mr-3 ">Web Technologies</h4>
+                <p>javascript, php, html5, css3, </p>
+              </div>
+              <div className="flex flex-wrap p-1 ">
+                <h4 className="font-bold mr-3 ">Web Frameworks/libraries</h4>
+                <p>ReactJs, nextJs,Tailwind,bootstrap,spring boot</p>
+              </div>
+              <div className="flex p-1 ">
+                <h4 className="font-bold mr-3 ">Mobile Dev</h4>
+                <p>React native</p>
+              </div>
+              <div className="flex flex-wrap p-1 ">
+                <h4 className="font-bold mr-3 ">Database</h4>
+                <p>
+                  {" "}
+                  Sql :MySql,Postgresql,pl/sql <br></br>NoSql :MondoDb{" "}
+                </p>
+              </div>
+              <div className="flex p-1 ">
+                <h4 className="font-bold mr-3 ">others</h4>
+                <p>git, RestApi, CI/CD , Aws, </p>
+              </div>
+
+              <div></div>
+            </div>
+          </div>
+          <div className="my__education">
+            <h3 className="my__education__title text-2xl">Education</h3>
+            <div className="my__education_content">
+              <div className="Emi border-l-2 border-black">
+                <p className="font-bold">Mohammadia School of Engineering</p>
+              </div>
+              <div className="prepa border-l-2 border-black mt-3">
+                <p className="font-bold  p-1">
+                  Preparatory Classes for Engineering Schools
+                </p>
+                <p>major in Mathematics and Physics</p>
+              </div>
+            </div>
+          </div>
+          <div className="my__projects">
+            <h3 className="my__projects__title text-2xl">Projects</h3>
+          </div>
+          <div className="my__languages">
+            {" "}
+            <h3 className="my__languages__title text-2xl">Languages</h3>
+          </div>
+        </div>
       </div>
-      <div className="skills"> skills</div>
-      <div className="education"> education</div>
-      <div className="projects">projects</div>
-      <div className="languages">languages</div>
     </div>
   );
 };
