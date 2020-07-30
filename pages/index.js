@@ -28,9 +28,9 @@ export default function Home() {
 
             <div
               id="personalCard"
-              className="flex  items-center    md:border  rounded-full  max-w-screen-sm  mx-auto "
+              className="flex   items-center    md:border  rounded-full  max-w-screen-sm  mx-auto "
             >
-              <div className="pr-2 pl-2" id="contImage">
+              <div className="pr-2 pl-2 items-center " id="contImage">
                 <img src="/issati2.jpg" className="imgReda "></img>
               </div>
               <div id="mainBioAndSocial" className="">

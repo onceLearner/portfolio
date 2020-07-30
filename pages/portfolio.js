@@ -7,7 +7,6 @@ const Portfolio = () => {
     <div className=" p-8 ">
       <Link href="index" className="flex ">
         <a className=" text-blue-700 shadow-2xl  hover:text-red-300">
-          {" "}
           <FaArrowCircleLeft /> back
         </a>
       </Link>
