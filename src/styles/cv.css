@@ -1,0 +1,13 @@
+#myName {
+  font-family: "Cairo", sans-serif;
+}
+#schoolName {
+  font-family: "Reem Kufi", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+#titleOfSection {
+  border-bottom: 2px solid black;
+  border-style: dashed;
+  width: fit-content;
+}

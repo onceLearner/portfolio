@@ -14,20 +14,23 @@ import Link from "next/link";
 
 const CV = () => {
   return (
-    <div className="cv p-4 ">
+    <div className="cv p ">
       <Head>
         <title> issati | CV</title>
       </Head>
-      <Link className="back underline bg-blue" href="index">
+      <Link className="back               underline bg-blue" href="index">
         <a className="cv__back_link text-blue-800  flex items-center  hover:text-red-300">
           <FaArrowLeft size={12} />
           <p className="ml-2 text-sm">return</p>
         </a>
       </Link>
-      <div className="main ">
-        <div className="header flex flex-wrap justify-between border-b  pb-5">
+      <div className="main                m-5 ">
+        <div className="header            flex flex-wrap justify-between border  pb-5">
           <div className="header__left p-4">
-            <h3 className="text-2xl font-semibold"> Mohammed el issati</h3>
+            <h3 className="text-4xl font-semibold" id="myName">
+              {" "}
+              Mohammed El Issati
+            </h3>
             <h4>software engineer Student</h4>
             <p className="header__left__bio max-w-3xl pt-3 font-thin">
               A confident, self-motivated software engineer .never-stop
@@ -57,10 +60,12 @@ const CV = () => {
             </a>
           </div>
         </div>
-        <div className="my  sm:flex flex-wrap  justify-evenly">
-          <div className="my__skills w-1/2">
-            <h3 className="my__skills__title text-2xl">Skills</h3>
-            <div className="my__skills__content mb-4 ">
+        <div className="my                 sm:flex flex-wrap  justify-evenly p-2 mt-3">
+          <div className="my__skills       sm:w-1/2 ">
+            <h3 className="my__skills__title text-2xl" id="titleOfSection">
+              Skills
+            </h3>
+            <div className="my__skills__content mb-4 p-2 ">
               <div className="flex p-1 ">
                 <h4 className="font-bold mr-3">languages:</h4>
                 <p>Python, C, java </p>
@@ -92,23 +97,35 @@ const CV = () => {
               <div></div>
             </div>
           </div>
-          <div className="my__education w-6/12 ">
-            <h3 className="my__education__title text-2xl ">Education</h3>
-            <div className="my__education_content mt-3">
-              <div className="Emi border-l-2 border-black p-3">
-                <p className="font-bold">Mohammadia School of Engineering</p>
-                <p className="">Bsc in Informatics </p>
+          <div className="my__education    sm:w-6/12 pl-2 ">
+            <h3 className="my__education__title text-2xl  " id="titleOfSection">
+              Education
+            </h3>
+            <div className="my__education_content mt-3 p-2">
+              <div className="Emi border-l-2 border-black pl-2 mb-4">
+                <div className="flex justify-between">
+                  <p className="" id="schoolName">
+                    Mohammadia School of Engineering
+                  </p>
+                  <p className="font-light text-sm ">2019 - 2022</p>
+                </div>
+                <p className="">Bsc in Software engineering </p>
               </div>
-              <div className="prepa border-l-2 border-black mt-3 p-2">
-                <p className="font-bold  p-1">
-                  Preparatory Classes for Engineering Schools
-                </p>
+              <div className="prepa border-l-2 border-black pl-2 mt-2 ">
+                <div className="flex justify-between">
+                  <p className="" id="schoolName">
+                    Preparatory Classes for Engineering Schools
+                  </p>
+                  <p className="font-light text-sm ">2017 - 2019</p>
+                </div>
                 <p>major in Mathematics and Physics</p>
               </div>
             </div>
           </div>
-          <div className="my__projects w-1/2 ">
-            <h3 className="my__projects__title text-2xl">Projects</h3>
+          <div className="my__projects     sm:w-1/2 p-3 ">
+            <h3 className="my__projects__title text-2xl" id="titleOfSection">
+              Projects
+            </h3>
             <div classNmae="my__projects__content">
               <div className="p1">
                 <h3>project 1</h3>
@@ -121,8 +138,11 @@ const CV = () => {
               </div>
             </div>
           </div>
-          <div className="my__languages w-1/2">
-            <h3 className="my__languages__title text-2xl">Languages</h3>
+          <div className="my__languages    w-1/2 p-3">
+            <h3 className="my__languages__title text-2xl" id="titleOfSection">
+              {" "}
+              Languages
+            </h3>
             <div className="my__languages__content">
               <div className="En flex">
                 <p className="text-mg font-bold mr-2">English: </p>

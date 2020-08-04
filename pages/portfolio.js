@@ -1,25 +1,29 @@
 import React, { useState } from "react";
 import Card from "../src/components/card";
-import { FaArrowCircleLeft } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
+import Head from "next/head";
 const Portfolio = () => {
   return (
-    <div className=" p-8 ">
-      <Link href="index" className="flex ">
-        <a className=" text-blue-700 shadow-2xl  hover:text-red-300">
-          <FaArrowCircleLeft /> back
-        </a>
-      </Link>
-      <div id="all_cards" className="p-3 flex justify-evenly gap-3">
-        <Card name="reda"></Card>
-        <Card name="reda2"></Card>
+    <div className="portfolio ">
+      <Head>
+        <title> issati | portfolio</title>
+      </Head>
+      <div className="return">
+        <Link className="return__link           underline bg-blue" href="index">
+          <a className="Portfolio__back_link text-blue-800  flex items-center  hover:text-purple-400">
+            <FaArrowLeft size={12} />
+            <p className="ml-2 text-sm">return</p>
+          </a>
+        </Link>
       </div>
-      <div className="">
-        <div className="flex justify-center">
-          <p>A</p>
-          <p>B</p>
+
+      <main className="main p-6">
+        <h3 className="main__title font-extrabold text-4xl">Projects</h3>
+        <div className="main__projects flex justify-between p-4">
+          <Card></Card>
         </div>
-      </div>
+      </main>
     </div>
   );
 };
