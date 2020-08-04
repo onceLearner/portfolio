@@ -16,7 +16,7 @@ const CV = () => {
   return (
     <div className="cv p-4 ">
       <Head>
-        <title>cv</title>
+        <title> issati | CV</title>
       </Head>
       <Link className="back underline bg-blue" href="index">
         <a className="cv__back_link text-blue-800  flex items-center  hover:text-red-300">
@@ -36,7 +36,10 @@ const CV = () => {
             </p>
           </div>
           <div className="header__right p-4 ">
-            <a href="" className="flex   items-center p-1 hover:underline ">
+            <a
+              href="mailto:mohamedelissati28@gmail.com"
+              className="flex   items-center p-1 hover:underline "
+            >
               <FiMail className="mr-2" /> <p>mohamedelissati28@gmail.com</p>
             </a>
             <a
@@ -54,10 +57,10 @@ const CV = () => {
             </a>
           </div>
         </div>
-        <div className="my  flex flex-wrap justify-evenly">
-          <div className="my__skills">
+        <div className="my  sm:flex flex-wrap  justify-evenly">
+          <div className="my__skills w-1/2">
             <h3 className="my__skills__title text-2xl">Skills</h3>
-            <div className="my__skills__content ">
+            <div className="my__skills__content mb-4 ">
               <div className="flex p-1 ">
                 <h4 className="font-bold mr-3">languages:</h4>
                 <p>Python, C, java </p>
@@ -89,13 +92,14 @@ const CV = () => {
               <div></div>
             </div>
           </div>
-          <div className="my__education">
-            <h3 className="my__education__title text-2xl">Education</h3>
-            <div className="my__education_content">
-              <div className="Emi border-l-2 border-black">
+          <div className="my__education w-6/12 ">
+            <h3 className="my__education__title text-2xl ">Education</h3>
+            <div className="my__education_content mt-3">
+              <div className="Emi border-l-2 border-black p-3">
                 <p className="font-bold">Mohammadia School of Engineering</p>
+                <p className="">Bsc in Informatics </p>
               </div>
-              <div className="prepa border-l-2 border-black mt-3">
+              <div className="prepa border-l-2 border-black mt-3 p-2">
                 <p className="font-bold  p-1">
                   Preparatory Classes for Engineering Schools
                 </p>
@@ -103,12 +107,36 @@ const CV = () => {
               </div>
             </div>
           </div>
-          <div className="my__projects">
+          <div className="my__projects w-1/2 ">
             <h3 className="my__projects__title text-2xl">Projects</h3>
+            <div classNmae="my__projects__content">
+              <div className="p1">
+                <h3>project 1</h3>
+              </div>
+              <div className="p2">
+                <h3>project 2</h3>
+              </div>
+              <div className="p3">
+                <h3>project 3</h3>
+              </div>
+            </div>
           </div>
-          <div className="my__languages">
-            {" "}
+          <div className="my__languages w-1/2">
             <h3 className="my__languages__title text-2xl">Languages</h3>
+            <div className="my__languages__content">
+              <div className="En flex">
+                <p className="text-mg font-bold mr-2">English: </p>
+                <p>proficient</p>
+              </div>
+              <div className="Fr flex">
+                <p className="text-mg font-bold mr-2">French: </p>
+                <p>fluent</p>
+              </div>
+              <div className="Ar flex">
+                <p className="text-mg font-bold mr-2">Arabic: </p>
+                <p>native</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
