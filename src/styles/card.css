@@ -1,0 +1,9 @@
+#avatar {
+  height: 7vh;
+  width: 9vw;
+  object-fit: contain;
+}
+#card_container:hover {
+  background-color: rgb(231, 231, 233);
+  cursor: pointer;
+}
