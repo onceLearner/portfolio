@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-
+import { myposts } from "../src/store/posts/myposts";
 import React, { useState } from "react";
 import { FaTwitch, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import Posts from "../src/components/posts";
@@ -82,11 +82,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div id="postsCont" className="p-3 m-5">
-            <h4 className="font-bold text-lg border-l-2 border-blue-400 pl-2 mt-3">
+          <div id="postsCont" className="mx-auto">
+            <h4 className="font-bold text-lg border-l-2 border-blue-400 pl-2 mt-4 mb-4">
               Articles
             </h4>
-            <Posts></Posts>
+          </div>
+          <div className="post__infos ">
+            {myposts.map((elt) => (
+              <Posts post={elt}></Posts>
+            ))}
           </div>
         </div>
       </main>
