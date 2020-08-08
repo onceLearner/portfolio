@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 const Posts = (probs) => {
   return (
-    <div className="Post mb-4 md:mx-auto ">
+    <div className="Post mb-4    ">
       <div className="Post__date">
         <p className="font-serif text-sm">{probs.post.date}</p>
       </div>

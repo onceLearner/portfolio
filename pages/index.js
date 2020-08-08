@@ -28,7 +28,7 @@ export default function Home() {
 
             <div
               id="personalCard"
-              className="flex   items-center    md:border  rounded-full  max-w-screen-sm  mx-auto "
+              className="flex   items-center   border-b-2 pb-2  md:border  md:rounded-full  max-w-screen-sm  mx-auto "
             >
               <div className="pr-2 pl-2 items-center " id="contImage">
                 <img src="/issati2.jpg" className="imgReda "></img>
@@ -87,7 +87,7 @@ export default function Home() {
               Articles
             </h4>
           </div>
-          <div className="post__infos ">
+          <div className="post__infos p-3 ">
             {myposts.map((elt) => (
               <Posts post={elt}></Posts>
             ))}
