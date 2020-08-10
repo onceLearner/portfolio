@@ -86,7 +86,7 @@ const CV = () => {
                 <h4 className="font-bold mr-3 ">Database</h4>
                 <p>
                   {" "}
-                  Sql :MySql,Postgresql,pl/sql <br></br>NoSql :MondoDb{" "}
+                  Sql :MySql,Postgresql,pl/sql <br></br>NoSql :MongoDb{" "}
                 </p>
               </div>
               <div className="flex p-1 ">

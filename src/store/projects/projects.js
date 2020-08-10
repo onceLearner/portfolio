@@ -6,13 +6,13 @@ export let Projects = [
     img: "avatar1.jpg",
     description: "wep Applicatoin",
     text:
-      "this project was intended to be used in different fields of the tech industry",
+      "this project was inteded to help individuals organize their time through a ToDo web app.",
     date: "sept 2017",
     stack: ["JS", "Php", "aws", "Mysql", "next"],
   },
   {
     name: "ICode",
-    img: "avatar1.jpg",
+    img: "logoByMe5.png",
     description: "wep Applicatoin",
     text:
       "online judge to help sharpen coding skills  & competitive programming",

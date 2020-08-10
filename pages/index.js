@@ -50,13 +50,13 @@ export default function Home() {
                 >
                   <div id="Pages" className=" ">
                     <Link href="portfolio" className="">
-                      <a className="text-blue-600 text-lg hover:underline ">
+                      <a className="text-blue-600 font-bold text-lg hover:underline ">
                         Portfolio
                       </a>
                     </Link>
 
                     <Link href="cv">
-                      <a className="text-blue-500 ml-3 hover:underline  mr-5 text-lg">
+                      <a className="text-blue-500 ml-3 font-bold hover:underline  mr-5 text-lg">
                         CV
                       </a>
                     </Link>
@@ -83,14 +83,15 @@ export default function Home() {
             </div>
           </div>
           <div id="postsCont" className="mx-auto">
-            <h4 className="font-bold text-lg border-l-2 border-blue-400 pl-2 mt-4 mb-4">
+            <h4 className="font-serif text-md border-l-2 border-blue-400 pl-2 mt-6 mb-4">
               Articles
             </h4>
-          </div>
-          <div className="post__infos p-3 ">
-            {myposts.map((elt) => (
-              <Posts post={elt}></Posts>
-            ))}
+            <a href="post/bulma"><p> click</p> </a>
+            <div className="post__infos p-3 mx-auto">
+              {myposts.map((elt) => (
+                <Posts post={elt}></Posts>
+              ))}
+            </div>
           </div>
         </div>
       </main>
