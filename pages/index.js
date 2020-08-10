@@ -86,7 +86,6 @@ export default function Home() {
             <h4 className="font-serif text-md border-l-2 border-blue-400 pl-2 mt-6 mb-4">
               Articles
             </h4>
-            <a href="post/bulma"><p> click</p> </a>
             <div className="post__infos p-3 mx-auto">
               {myposts.map((elt) => (
                 <Posts post={elt}></Posts>
